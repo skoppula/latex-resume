@@ -1,0 +1,140 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\voffset}{0.1in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.75in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.5in}
+\setlength{\evensidemargin}{-0.5in}
+%-----------------------------------------------------------
+%\usepackage{fullpage}
+\usepackage{shading}
+%\textheight=9.0in
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-4pt}}
+\newcommand{\resheading}[1]{{\large \parashade[.9]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+	\textbf{#1} & \textit{#2} \\
+	\textit{#3} & \textit{#4}\\
+\end{tabular*}\vspace{-6pt}}
+
+
+\newcommand{\ressubhead}[2]{
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+	\textbf{#1} & \textit{#2} \\
+\end{tabular*}\vspace{-6pt}}
+
+\usepackage{xcolor}
+\usepackage[colorlinks = true, 
+	linkcolor = blue,
+	urlcolor  = blue,
+	citecolor = blue,
+	anchorcolor = blue]{hyperref}
+
+\newcommand{\MYhref}[3][blue]{\href{#2}{\color{#1}{#3}}}%
+
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+	\textbf{\Large Skanda Koppula}  & \href{mailto:skoppula@mit.edu}{skoppula@mit.edu}\\
+450 Memorial Drive &  \href{http://github.com/skoppula}{github.com/skoppula}\\
+	Cambridge, MA 02139 & 1.412.259.3123\\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+%\resheading{Education}
+\ressubheading{Massachusetts Institute of Technology}{}{\vspace{4mm}Major: Computer Science and Engineering}{Candidate for BSc, 2017}
+\textit{Relevant courses:} Constructive Multicore Architecture, Artificial Intelligence, Software Architecture, Design and Analysis of Algorithms, Biostatistics and Genetics, Machine Learning, Computation Structures
+
+\vspace{0.1in}
+
+\large \textbf{Projects and Work Experience\vspace{1mm}} \normalsize
+\ressubhead{vuPoint, \textit{a collaborative platform for text comparison}}{Oct. '13, Aug. '14}
+
+	\begin{itemize}
+		\resitem{HackMIT web project (\href{http://vupoint.meteor.com}{vupoint.meteor.com}) later extended to be a prototype Android app}
+		\resitem{Implemented Latent Dirichlet and Gaussian SVMs (via OpenCV) for sentiment and keyword analysis in pairwise essay comparison}
+	\end{itemize}
+
+	\ressubheading{Structure-Based Statistical Modeling of Protein Interactions}{May 2014 - Aug. 2014}{Informatics Intern at the Keating Lab}{}
+	\begin{itemize}
+		\resitem{Co-developed five-term frequency-analysis procedure to predict the stability of protein complexes}
+		\resitem{Achieved $>350$\% speed-up via algorithmic changes (e.g. developing pre-processed libraries) and extending rate-limiting Python sections with C}
+		\resitem{Submitting to \textit{PLoS Computational Biology, Software}}
+	\end{itemize}
+
+	\ressubheading{Bayesian-Based Prognostic Modeling of Genetic Diseases}{May 2014 - Aug. 2014}{Informatics Intern at the Keating Lab}{}
+	\begin{itemize}
+		\resitem{Build Bayesian models of lung cancer and schizophrenia with }
+		\resitem{Achieved $>350$\% speed-up via algorithmic changes (e.g. developing pre-processed libraries) and extending rate-limiting Python sections with C}
+		\resitem{Submitting to \textit{PLoS Computational Biology, Software}}
+	\end{itemize}
+
+
+\resheading{Awards}
+	\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		Faculty of Engineering Scholarship (\$2,300) & 2002\\
+		Ontario Graduate Scholarship (OGS) (\$15,000) & 2002-2003\\
+		Industrial NSERC Undergraduate Research Award (\$4500) & 2002\\
+		UBC OSI (Outstanding Student Initiative) Entrance Scholarship (\$10,000) & 1997-2002\\
+		Engineering Physics 50th Anniversary Scholarship (\$600) & 2001\\
+		Anne. M. Mack Scholarship (\$500) & 2001\\
+		NSERC Undergraduate Student Research Award (\$4000) & 2000\\
+		United Food and Commercial Workers Union, Local 1518 Scholarship (\$1000) & 1998\\
+		Top Senior Math Student Award & 1997\\
+		B.C. Provincial Exam Scholarship (\$1000) & 1997\\
+		B.C. Government Passport to Education (\$800) & 1997\\
+		James Whiteside Elementary Parent Advisory Committee Award (\$200) & 1997\\
+\end{tabular*}
+
+\resheading{Skills}
+
+\begin{description}
+\item[Languages:]
+C/C++, \LaTeX, Java, SPICE, MEDICI (TCAD), VHDL/VHDL-AMS, 68000 and PIC Assembly
+\item[Operating Systems:]
+Linux (Debian), Solaris, UNIX, MacOS X, Windows 95/98/NT/2000/XP
+\item[Applications:]
+Mathematica, MatLab, GNU Octave, LabVIEW, Cadence, \LaTeX, OpenOffice, MS Office XP, OrCAD schematic capture \& PCB layout, Altera MAX+PlusII VHDL FPGA Design
+\item[Lab Skils:]
+Digital/Analog Scopes, Spectrum Analyzer, Function Generators
+\item[Fab Skills:]
+PECVD and sputtering deposition, UV lithography, wet etch, dry etch (RIE), mask aligner, step profiler, ellipsometry, infrared spectroscopy, x-ray diffraction
+\item[Miscellaneous:]
+software configuration management, strong verbal and written communication skills, excellent troubleshooting and debugging skills, exceptional problem solving skills, good teams skills
+\end{description}
+
+\resheading{Interests}
+
+\begin{description}
+\item[Academic:] Solid state devices,  nanotechnology, photonics, microcontrollers, RF/wireless
+\item[Sports:] Playing hockey and swimming
+\item[Computers:] Currently maintain two official Debian Linux packages, Mozilla beta tester, enjoy using and learning Linux systems, Building electronics projects at home, and writing JAVA software
+\item[Musical:] Playing guitar and piano
+\item[Membership:] Student member of IEEE since 1998, Materials Research Society member since 2002
+\item[Other:] Reading novels
+\end{description}
+
+\end{document}
