@@ -3,16 +3,19 @@ author=skanda
 totalfile=${author}-${file}
 
 pdf: 
-		pdflatex --shell-escape -jobname=${totalfile} ${file}.tex
+		latex --shell-escape -jobname=${totalfile} ${file}.tex
+		dvipdfm ${totalfile}.dvi
+		rm *.dvi
 
 read:
-		evince ${totalfile}.pdf &
+		open ${totalfile}.pdf &
 
 clean:
-		rm -rf *.log *.aux missfont.log _minted* texput.log *.out
+		rm -rf *.log *.aux missfont.log _minted* texput.log *.out *.dvi
 
 mpc:
-		pdflatex --shell-escape -jobname=${totalfile} ${file}.tex
-		rm -rf *.log *.aux missfont.log _minted* texput.log *.out
-		evince ${totalfile}.pdf &
+		latex --shell-escape -jobname=${totalfile} ${file}.tex
+		dvipdfm ${totalfile}.dvi
+		rm -rf *.log *.aux missfont.log _minted* texput.log *.out *.dvi
+		open ${totalfile}.pdf &
 
