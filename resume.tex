@@ -11,11 +11,11 @@
 \setlength{\headsep}{0in}
 \setlength{\textheight}{11in}
 \setlength{\textheight}{9.5in}
-\setlength{\topmargin}{-0.75in}
+\setlength{\topmargin}{-0.35in}
 \setlength{\textwidth}{7in}
 \setlength{\topskip}{0in}
-\setlength{\oddsidemargin}{-0.5in}
-\setlength{\evensidemargin}{-0.5in}
+\setlength{\oddsidemargin}{-0.35in}
+\setlength{\evensidemargin}{-0.35in}
 %-----------------------------------------------------------
 %\usepackage{fullpage}
 %\textheight=9.0in
@@ -28,18 +28,18 @@
 %Custom commands
 \newcommand{\resitem}[1]{\item[--] #1 \vspace{-4pt}}
 \newcommand{\resheading}[1]{{\large \parashade[.9]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}}
-\newcommand{\ressubheading}[4]{
+\newcommand{\ressubheading}[4] {
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
 	\textbf{#1} & \textit{#2} \\
 	\textit{#3} & \textit{#4}\\
 \end{tabular*}\vspace{-6pt}}
 
-\newcommand{\ressubheadingtwo}[2]{
+\newcommand{\ressubheadingtwo}[2] {
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
 	\textbf{#1} & \textit{#2} \\
 \end{tabular*}\vspace{-6pt}}
 
-\newcommand{\ressubhead}[2]{
+\newcommand{\ressubhead}[2] {
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
 	\textbf{#1} & \textit{#2} \\
 \vspace{0.01in}
@@ -71,7 +71,7 @@
 %\resheading{Education}
 \ressubheading{Massachusetts Institute of Technology}{}{\vspace{4mm}Masters of Engineering, Computer Systems and Security,  GPA: 5.0/5.0}{Sept. 2016 - Present}
 \ressubheading{Massachusetts Institute of Technology}{}{\vspace{4mm}Major: Computer Science and Engineering, BSc,    GPA: 4.7/5.0}{Sept. 2013 - June 2016}
-\textit{Relevant courses:} Computer and Network Security, Compilers, Digital Communications Systems, Computer Systems Engineering, Cryptography, Design and Analysis of Algorithms, Theory of Computation, Artificial Intelligence, Computer Architecture, Operating Systems, Computer Networks
+\textit{Relevant courses:} Machine Learning, Computer and Network Security, Compilers, Digital Communications Systems, Computer Systems Engineering, Cryptography, Design and Analysis of Algorithms (Teaching Assistant), Theory of Computation, Computer Architecture, Operating Systems, Computer Networks, Electronics Projects Lab
 
 \vspace{0.2in}
 
@@ -79,47 +79,45 @@
     \vspace{0.05in}
 	\ressubheadingtwo{Yahoo Login Abuse Team, Software Engineering Intern}{June 2016 - Sep. 2016}
 	\begin{itemize}
-            \resitem{Developed low-latency classifier to label registration events on Yahoo services as spam and botnets. Demonstrated a 1.27x improvement in classifier accuracy from the previous systems}
-		    \resitem{Built data feed service to automatically grab data from Facebook ThreatExchange and four other sources for real-time classifier updates}
+            \resitem{Prototyped production-ready neural network to classify account registration and login events on Yahoo services as spam. Demonstrated a 6\% improvement in network's equal error rate from previous system}
+		    \resitem{Designed and deployed a multi-threaded data feed service to pull data hourly from Facebook ThreatExchange and thirty-one other sources to inform classifier of threat intelligence updates}
+	\end{itemize}
+
+    \vspace{0.05in}
+	\ressubheadingtwo{Embedded Software Lead for MIT Electric Vehicle Team}{August 2016 - Present}
+	\begin{itemize}
+		\resitem{Developed software and hardware tools to eavesdrop on a Controller Area Network and validate messaging specifications}
+        \resitem{Responsible for design and development of various software systems: sensor modules, driver interface boards, and battery management system}
+	\end{itemize}
+
+	\vspace{2mm}
+
+	\ressubheading{Low Latency Speech-Based Authentication}{May 2015 - Present}{MIT Energy Efficient Circuits Group}{}
+	\begin{itemize}
+            \resitem{Designed the first set of low-latency protocols for speaker authentication that prevent memory-snooping attacks. Constructed a software prototype in Scala. Paper in progress.}
 	\end{itemize}
 
     \vspace{0.05in}
 	\ressubheadingtwo{Square Security Infrastructure Team, Software Engineering Intern}{June 2015 - Aug. 2015}
 	\begin{itemize}
-		\resitem{Added embedded firmware to capture memory dump when the Square card-reader crashes}
+		\resitem{Modified embedded program to capture memory dump when the Square card-reader crashes}
 		\resitem{Developed back-end service to symbolify binary contents to human-readable source error trace}
 	\end{itemize}
 
 	\vspace{2mm}
-
-	\ressubheading{Low Latency Privacy-Preserving Biometric Authentication}{May 2015 - Present}{MIT Energy Efficient Circuits Group}{}
-	\begin{itemize}
-            \resitem{Designed protocols for privacy-preserving speaker authentication in the Pailler/BGN cryptosystems}
-            \resitem{Constructed a software prototype of speaker authentication systems}
-	\end{itemize}
-
-    \vspace{0.05in}
-	\ressubheadingtwo{Embedded Software for MIT Electric Vehicle Team}{May 2014 - Present}
-	\begin{itemize}
-        \resitem{Designed module (with 32-bit ARM core and high-power relays) to read in status of car toggles and output control CAN messages to drive car}
-		\resitem{Developed software tools to eavesdrop on the CAN bus and verify that message bus contains messages that match our signaling specification}
-	\end{itemize}
-
-	\vspace{2mm}
-    \ressubheading{Power-Based Side-Channel Attack for AES Key Extraction on ATMega328P}{Sept. 2015 - Nov. 2015}{6.858 Final Project - Computer Systems Security}{}
+    \ressubheading{Power-Based Side-Channel Attack for AES Key Extraction}{Oct. 2015 - Nov. 2015}{6.858 Final Project - Computer Systems Security}{}
 	\vspace{0.01mm}
 	\begin{itemize}
-        \resitem{Built hardware setup to measure power consumption, and implemented the Correlation Power Analysis algorithm that extracts an AES secret from an Arduino's flash memory measuring only power consumption}
+            \resitem{Built hardware setup to measure power consumption, and implemented the Correlation Power Analysis algorithm. Successfully extracted an AES secret from an Arduino's flash memory measuring only power consumption}
 	\end{itemize}
-
 
 	\vspace{2mm}
 
 \large \textbf{Skills\vspace{2mm}} \normalsize
 	 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
-         \hspace{2mm} Web Systems: \textbf{JAX-RS/Jetty}, \textbf{Rails/RSpec}, \textbf{Flask}, \textbf{JavaScript}, \textbf{Node.js} \\
-         \hspace{2mm} Embedded Systems: \textbf{C}, and working knowledge in \textbf{x86 Assembly} and \textbf{Bluespec Verilog}. \\
-         \hspace{2mm} Misc: \textbf{Python}, \textbf{Scala}, \textbf{shell}, \textbf{Haskell}, \textbf{Hadoop FS/Hive}, \textbf{scipy}, \textbf{TensorFlow}  \\
+         \hspace{2mm} Web Systems: \textbf{JAX-RS/Jetty}, \textbf{Rails/RSpec}, \textbf{Flask}, \textbf{JavaScript} \\
+         \hspace{2mm} Embedded Systems: \textbf{C}, \textbf{x86 Assembly} and \textbf{Bluespec Verilog}. \\
+         \hspace{2mm} Misc: \textbf{Python}, \textbf{Scala}, \textbf{shell}, \textbf{Hadoop FS/Hive}, \textbf{Spark}, \textbf{scipy}, \textbf{TensorFlow}  \\
 	\end{tabular*}
 
 \vspace{0.1in}
