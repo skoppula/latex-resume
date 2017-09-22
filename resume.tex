@@ -66,73 +66,77 @@
 \end{tabular*}
 \\
 
-\vspace{0.1in}
+\vspace{0.05in}
 
 %\resheading{Education}
-\ressubheading{Massachusetts Institute of Technology}{}{\vspace{4mm}Masters of Engineering, Computer Systems and Security,  GPA: 5.0/5.0}{Expected Dec. 2017}
-\ressubheading{Massachusetts Institute of Technology}{}{\vspace{4mm}BSc. Computer Science and Engineering,  GPA: 4.7/5.0}{Sept. 2013 - June 2016}
-\textit{Relevant courses:} Advanced Machine and Statistical Learning, Computer and Network Security, Applied Cryptography, Compilers, Operating Systems, Design and Analysis of Algorithms (Teaching Assistant), Theory of Computation, Computer Architecture, Computer Networks, Electronics Projects Lab
+\ressubheading{Massachusetts Institute of Technology}{}{\vspace{4mm}Masters of Engineering, BSc, Computer Systems,  MEng GPA: 5.0/5.0}{Sept. 2013 - Expected June 2018}
+\textit{Relevant courses:} Digital Architecture for Deep Learning, Computer Security, Applied Cryptography, Compilers, Operating Systems, Computer Architecture, Computer Networks, Bayesian Inference 
 
-\vspace{0.2in}
+\vspace{0.05in}
 
-\large \textbf{Work Experience\vspace{3mm}} \normalsize
-	\ressubheadingtwo{Google Search, Research Intern}{June 2017 - Sep. 2017}
+\large \textbf{Work Experience\vspace{1mm}} \normalsize
+
+	\ressubheadingtwo{Google Search, Research Intern}{June 2017 - Ongoing}
 	\begin{itemize}
+            \resitem{Demonstrated decomposition methods to improve cross-domain adaptability of neural language models (LSTM/RNNs). Currently experimenting with decoding of LSTM memory state to improve interpretability of language models. }
 	\end{itemize}
-    \vspace{0.05in}
+
 	\ressubheadingtwo{Yahoo Login Abuse Team, Software Engineering Intern}{June 2016 - Sep. 2016}
 	\begin{itemize}
-            \resitem{Prototyped production-ready neural network to classify account registration and login events on Yahoo services as spam. Demonstrated a 6\% improvement in classifier's equal error rate. }
-		    \resitem{Deployed a multi-threaded data feed service to pull data hourly from Facebook ThreatExchange and thirty-one sources to update classifier of with threat intelligence. Voted top intern project.}
+            \resitem{Prototyped DNN to recognize spam login events, realizing a 6\% decrease in error rate. Deployed parallelized data feed to pull threat intelligence from 31 sources, updating production classifier.}
 	\end{itemize}
 
     \vspace{0.05in}
 	\ressubheadingtwo{Square Security Infrastructure Team, Software Engineering Intern}{June 2015 - Aug. 2015}
 	\begin{itemize}
-            \resitem{Developed back-end service to collect memory core dumps from Square card readers that crash. The service symbolified binary contents to human-readable source error trace for developers.}
+            \resitem{Developed service to collect memory core crashdumps from Square card readers, symbolifing the binary contents to a human-readable source error trace.}
 	\end{itemize}
 
     \vspace{0.05in}
 
-\large \textbf{Projects\vspace{3mm}} \normalsize
-    \vspace{0.05in}
+\large \textbf{Selected Projects\vspace{1mm}} \normalsize
 
-	\ressubheadingtwo{MIT Efficient Circuits Group, Memory-Secure Speech Authentication}{Sept. 2015 - Present}{}
+    \ressubheadingtwo{MIT Formula SAE Racecar Electronics Team}{August 2015 - Present}
+    \begin{itemize}
+        \resitem{Wrote firmware for the first open-source automotive battery management system. Orchestrates battery dis/charging state, balancing, safety checks, charging algorithms. \url{https://github.com/MITEVT/ltc-battery-controller}}
+            \resitem{Designed and built a driverless Formula racecar controller: \url{https://arxiv.org/abs/1708.02215}.}
+    \end{itemize}
+
+    \ressubheadingtwo{Power-Based Side-Channel Attack on ATMega328}{Nov. 2015}{}
 	\begin{itemize}
-            \resitem{Developed memory-secure LSTM/DNN neural networks to replace traditional i-vector systems for state-of-art speaker authentication.}
+            \resitem{Demonstrated extraction of an AES key from an Arduino's flash memory from chip's power traces. Implemented the Correlation Power Analysis attack.}
 	\end{itemize}
 
     \vspace{0.05in}
-	\ressubheadingtwo{MIT Autonomous FSAE Vehicle Team, Embedded Software Lead}{August 2015 - Present}
+
+\large \textbf{Selected Research \vspace{1mm}} \normalsize
+    \vspace{0.05in}
+
+	\ressubheadingtwo{MIT Energy Efficient Circuits Group}{Sept. 2015 - Present}{}
 	\begin{itemize}
-        \resitem{Prototyped convolutional network for end-to-end driver control algorithms in simulation and cone recognition.}
-		\resitem{Developed embedded system to orchestrate battery discharging, run safety checks, and manage car state. Created team CAN and SPI libraries for our 32-bit ARM microcontroller.}
+            \resitem{Developed memory-efficient LSTM/DNN neural network to replace traditional i-vector system for speaker verification. 3x reduction in model size. Prototyped FPGA with on-chip BRAM model}
 	\end{itemize}
 
-    \vspace{0.05in}
-
-
-    \ressubheadingtwo{Power-Based Side-Channel Attack on ATMega328}{Oct. 2015 - Nov. 2015}{}
+    \ressubheadingtwo{Bayesian Inference for Detection of Alcoholism Pre-disposition}{May 2013}{}
 	\begin{itemize}
-            \resitem{Built hardware setup to measure power consumption, and implemented the Correlation Power Analysis algorithm for a final project for a security class.}
-            \resitem{Demonstrated extraction of an AES key from an Arduino's flash memory from chip's power traces}
+            \resitem{Applied Bayesian modeling to develop a genomic-environmental factor model to detect patients at-risk or pre-disposed to alcoholism}
+            \resitem{Published in Proceedings of the American Medical Informatics Association: \url{https://www.ncbi.nlm.nih.gov/pubmed/24303313}}
 	\end{itemize}
 
-    \vspace{0.05in}
-
-\large \textbf{Skills\vspace{2mm}} \normalsize
+\large \textbf{Skills\vspace{1mm}} \normalsize
 	 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
-         \hspace{2mm} Embedded Systems: \textbf{C}, \textbf{x86 Assembly} and \textbf{Bluespec Verilog}. \\
-         \hspace{2mm} Misc: \textbf{Python}, \textbf{Java}, \textbf{Scala}, \textbf{shell}, \textbf{Hadoop FS/Hive}, \textbf{Spark}, \textbf{scipy}, \textbf{TensorFlow}  \\
+         \hspace{2mm} Embedded Systems: \textbf{C}, \textbf{x86 Assembly}, \textbf{Vivado HLS}, and \textbf{Bluespec Verilog}. \\
+         \hspace{2mm} Misc: \textbf{Python}, \textbf{Java}, \textbf{Scala}, \textbf{shell scripting}, \textbf{TensorFlow}  \\
          \hspace{2mm} Web Systems: \textbf{JAX-RS/Jetty}, \textbf{Rails/RSpec}, \textbf{Flask} \\
 	\end{tabular*}
 
 \vspace{0.1in}
 \large \textbf{Awards\vspace{2mm}} \normalsize
 	 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+		 \hspace{2mm} Cisco Snort Security Scholarship Recipient & 2017\\
+		 \hspace{2mm} 2nd Place North American FSAE Lincoln Electric Racing Competition (Team) & 2017\\
 		 \hspace{2mm} Analog Devices Research and Innovation Scholar Award & 2016\\
-		 \hspace{2mm} Crowd Favorite Research Poster at the 2016 MIT EECS Research Conference & 2016\\
-		 \hspace{2mm} Third Place in Jane Street Collegiate Programmatic Trading Competition & 2015\\
-         \hspace{2mm} Google Science Fair Finalist & 2011\\
+		 \hspace{2mm} Top Research Poster at the 2016 MIT EECSCon Undergraduate Research Conference & 2016\\
+		 \hspace{2mm} Fourth Place in Jane Street Collegiate Programmatic Trading Competition & 2015\\
 	\end{tabular*}
 \end{document}
