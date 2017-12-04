@@ -70,16 +70,26 @@
 
 %\resheading{Education}
 \ressubheading{Massachusetts Institute of Technology}{}{\vspace{4mm}Masters of Engineering, BSc, Computer Systems,  MEng GPA: 5.0/5.0}{Sept. 2013 - Expected February 2018}
-\textit{Relevant courses:} Digital Architecture for Deep Learning, Computer Security, Applied Cryptography, Compilers, Operating Systems, Computer Architecture, Computer Networks, Bayesian Inference 
+\textit{Relevant courses:} Hardware Architecture for Deep Learning, Computer and Network Security, Cryptography and Cryptoanalysis, Compilers, Operating Systems, Constructive Computer Architecture, Computer Networks, Bayesian Inference, Machine Learning
 
 \vspace{0.05in}
 
 \large \textbf{Work Experience\vspace{1mm}} \normalsize
 
-	\ressubheadingtwo{Google Search, Research Intern}{June 2017 - September 2017}
+	\ressubheadingtwo{Google Search, Software Research Intern}{June 2017 - September 2017}
 	\begin{itemize}
-            \resitem{Tested decomposition methods to improve cross-domain adaptability of neural language models (LSTM/RNNs). Designed and demonstrated new method to visualize memory of recurrent neural networks, as applied to character language models. Submitted to 2018 IEEE Conference for Acoustics and Signal Processing.}
+            \resitem{Tested decomposition methods to improve cross-domain adaptability of recurrent neural language models (e.g. character LSTM/RNNs).}
+            \resitem{Developed new method to visualize memory of recurrent neural networks, as applied to character language models and end-to-end speech recognition systems.}
+            \resitem{Paper under review for 2018 IEEE Conference for Acoustics and Signal Processing. \url{https://people.csail.mit.edu/skoppula/papers/memory-signatures.pdf} }
 	\end{itemize}
+
+	\ressubheadingtwo{Yahoo Login Abuse, Software Engineering Intern}{June 2015 - Aug. 2015}
+	\begin{itemize}
+            \resitem{Prototyped neural network to classify account registration and login events on Yahoo services as spam. Demonstrated a 6\% improvement in classifier's equal error rate from prior system.}
+            \resitem{Deployed a multi-threaded data feed service to pull data hourly from Facebook ThreatExchange and thirty-one sources to update classifier of with threat intelligence. Awarded outstanding intern project bonus.}
+	\end{itemize}
+
+    \vspace{0.05in}
 
     \vspace{0.05in}
 	\ressubheadingtwo{Square Security, Software Engineering Intern}{June 2015 - Aug. 2015}
@@ -94,21 +104,22 @@
 
 	\ressubheadingtwo{MIT Energy Efficient Circuits Group}{Sept. 2015 - Present}{}
 	\begin{itemize}
-            \resitem{Developed memory-efficient convolutional neural network for speaker identification. 8x size reduction and 1000x decrease in energy consumption from comparable speaker ID systems.}
-            \resitem{Designed custom hardware for FPGA to evaluate compressed network. Paper submitted to 2018 IEEE Conference for Acoustics and Signal Processing.}
+            \resitem{Developed memory-efficient convolutional neural network for speaker identification. 10x size reduction and $>$100x decrease in estimated energy consumption from comparable speaker ID systems. Wrote custom hardware design on FPGA to evaluate ternarized speaker verification network.}
+            \resitem{Prototyped software system for privacy-preserving speaker identification, obfuscating private speech data using a data representation based on locality sensitive hashing with provable security/accuracy bounds.}
+            \resitem{Paper under review for 2018 IEEE Conference for Acoustics and Signal Processing. \url{https://people.csail.mit.edu/skoppula/papers/sid-ternary-nets.pdf} }
 	\end{itemize}
 
     \ressubheadingtwo{Bayesian Inference for Detection of Illness Pre-disposition}{May 2013}{}
 	\begin{itemize}
-            \resitem{Applied Bayesian modeling to develop a genomic-environmental factor model to detect patients at-risk or pre-disposed to cancer, schizophrenia, and alcoholism. Published in AMIA 2014: \url{https://www.ncbi.nlm.nih.gov/pubmed/24303313}}
+            \resitem{Applied Bayesian modeling to develop a genomic-environmental factor model to detect patients at-risk or pre-disposed to cancer, schizophrenia, and alcoholism. Published in Joint Summits of American Medical Informatics 2013: \url{https://www.ncbi.nlm.nih.gov/pubmed/24303313}}
 	\end{itemize}
 
 \large \textbf{Projects\vspace{1mm}} \normalsize
 
-    \ressubheadingtwo{MIT Formula SAE Racecar Electronics Team}{August 2015 - Present}
+    \ressubheadingtwo{MIT Formula SAE Racecar Electronics Team, Firmware Lead}{August 2015 - Present}
     \begin{itemize}
         \resitem{Designed electronics and wrote firmware for the first open-source automotive battery management system. Orchestrates battery dis/charging state, balancing, safety checks, charging algorithms. \url{https://github.com/MITEVT/ltc-battery-controller}}
-            \resitem{Designed and simulated a driverless Formula racecar controller: \url{https://arxiv.org/abs/1708.02215}.}
+            \resitem{Trained a CNN-based controller for a driverless Formula racecar. Wrote simulator for corresponding controller model. Technical Report: \url{https://arxiv.org/abs/1708.02215}.}
     \end{itemize}
 
     \ressubheadingtwo{Power-Based Side-Channel Attack on ATMega328}{Nov. 2015}{}
@@ -121,8 +132,8 @@
 \large \textbf{Skills\vspace{1mm}} \normalsize
 	 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
          \hspace{2mm} Embedded Systems: \textbf{C}, \textbf{x86 Assembly}, \textbf{Vivado HLS}, and \textbf{Bluespec Verilog}. \\
-         \hspace{2mm} Misc: \textbf{Python}, \textbf{Java}, \textbf{Scala}, \textbf{shell scripting}, \textbf{TensorFlow}  \\
-         \hspace{2mm} Web Systems: \textbf{JAX-RS/Jetty}, \textbf{Rails/RSpec}, \textbf{Flask} \\
+         \hspace{2mm} Misc: \textbf{Python}, \textbf{C++}, \textbf{Java}, \textbf{Scala}, \textbf{shell scripting}, \textbf{TensorFlow/pytorch}  \\
+         \hspace{2mm} Web Systems: \textbf{JAX-RS/Jetty}, \textbf{Rails/RSpec}, \textbf{Flask, Django} \\
 	\end{tabular*}
 
 \vspace{0.1in}
@@ -131,7 +142,11 @@
 		 \hspace{2mm} Cisco Snort Security Scholarship Recipient & 2017\\
 		 \hspace{2mm} 2nd Place North American FSAE Lincoln Electric Racing Competition (Team) & 2017\\
 		 \hspace{2mm} Analog Devices Research and Innovation Scholar Award & 2016\\
-		 \hspace{2mm} Top Research Poster at the 2016 MIT EECSCon Undergraduate Research Conference & 2016\\
+		 \hspace{2mm} Fourth Place Research Poster at the 2016 MIT EECSCon Undergraduate Research Conference & 2016\\
 		 \hspace{2mm} Fourth Place in Jane Street Collegiate Programmatic Trading Competition & 2015\\
+		 \hspace{2mm} Qualified for AIME and USA Math Olympiad & 2013\\
+		 \hspace{2mm} USA Math Talent Search Silver Division & 2012-13\\
+		 \hspace{2mm} USA Biology Olympiad Semi-Finalist & 2012-13\\
+		 \hspace{2mm} Google Science Fair Finalist & 2011\\
 	\end{tabular*}
 \end{document}
