@@ -1,6 +1,6 @@
 #!/bin/bash
 
-file="resume"
+file="cv"
 author="skanda"
 totalfile="$author-$file"
 
