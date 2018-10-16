@@ -7,6 +7,13 @@ totalfile="$author-$file"
 # Compile the tex file
 pdflatex --shell-escape -jobname=$totalfile ${file}.tex
 
+cd papers-page
+./build.sh
+cd ..
+
+echo "pdftk ${file}.pdf papers-page/papers.pdf output ${file}-with-papers.pdf"
+pdftk ${totalfile}.pdf papers-page/skanda-papers.pdf output ${totalfile}-with-papers-page.pdf
+
 # Cleanup the junk
 rm -rf *.log *.aux missfont.log _minted* texput.log *.out *.dvi
 

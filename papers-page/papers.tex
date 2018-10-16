@@ -1,0 +1,132 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\voffset}{0.1in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.35in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.35in}
+\setlength{\evensidemargin}{-0.35in}
+%-----------------------------------------------------------
+%\usepackage{fullpage}
+%\textheight=9.0in
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item[--] #1 \vspace{-4pt}}
+\newcommand{\resheading}[1]{{\large \parashade[.9]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}}
+\newcommand{\ressubheading}[4] {
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+	\textbf{#1} & \textit{#2} \\
+	\textit{#3} & \textit{#4}\\
+\end{tabular*}\vspace{-6pt}}
+
+\newcommand{\ressubheadingtwo}[2] {
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+	\textbf{#1} & \textit{#2} \\
+\end{tabular*}\vspace{-6pt}}
+
+\newcommand{\ressubhead}[2] {
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+	\textbf{#1} & \textit{#2} \\
+\vspace{0.01in}
+\end{tabular*}\vspace{-6pt}}
+
+\usepackage{xcolor}
+\usepackage[colorlinks = true, 
+	linkcolor = blue,
+	urlcolor  = blue,
+	citecolor = blue,
+	anchorcolor = blue]{hyperref}
+
+\newcommand{\MYhref}[3][blue]{\href{#2}{\color{#1}{#3}}}%
+
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Skanda Koppula}  & \href{mailto:koppulas@student.ethz.ch}{\nolinkurl{koppulas@student.ethz.ch}}\\
+  1702 Holmes Drive &  \href{http://skoppula.github.io}{\nolinkurl{skoppula.github.io}}\\
+	Sewickley, PA 15143 & 1.412.259.3123\\
+\end{tabular*}
+\\
+
+\vspace{0.2in}
+
+\large \textbf{Publications\vspace{0.2in}}
+\normalsize
+
+\ressubheadingtwo{Understanding Recurrent Neural State Using Memory Signatures}{}
+    \begin{itemize}
+        \itemsep0em
+            \resitem{Skanda Koppula*, Khe Chai Sim, and Kean Chin (Google Inc.)}
+            \resitem{2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2018).}
+            \resitem{Full-text paper available at \url{https://arxiv.org/abs/1802.03816}}
+    \end{itemize}
+\vspace{0.1in}
+
+\ressubheadingtwo{Energy-Efficient Speaker Identification With Low-Precision Networks}{}
+\begin{itemize}
+    \itemsep0em
+    \resitem{Skanda Koppula*, James Glass, and Anantha P. Chandrakasan (MIT)}
+    \resitem{2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2018).}
+    \resitem{Full-text paper available at \url{https://groups.csail.mit.edu/sls/publications/2018/Koppula1_ICASSP18.pdf}}
+\end{itemize}
+\vspace{0.1in}
+
+\ressubheadingtwo{Robust Predictive Bayesian Analysis for Genome-Wide Association and Expression Studies}{}
+\begin{itemize}
+    \itemsep0em
+    \resitem{Skanda Koppula*, Amin Zollanvari, Ning An, and Gil Alterovitz (MIT, Harvard Medical School)}
+    \resitem{Proceedings of the American Medical Informatics Joint Summit (AMIA 2013)}
+    \resitem{Full-text paper available at \url{https://www.ncbi.nlm.nih.gov/pubmed/24303313}}
+\end{itemize}
+
+\vspace{0.2in}
+
+\large \textbf{Technical Reports\vspace{0.2in}}
+\normalsize
+
+\ressubheadingtwo{Learning a CNN-based End-to-End Controller for a Formula SAE Racecar}{}
+\begin{itemize}
+    \itemsep0em
+    \resitem{Skanda Koppula*, Kevin Chan (MIT)}
+    \resitem{Technical Report from MIT Formula SAE Electric}
+    \resitem{Full-text report available at \url{https://arxiv.org/abs/1708.02215}}
+\end{itemize}
+\vspace{0.1in}
+
+\ressubheadingtwo{Power-Based Side-Channel Attack for AES Key Extraction on the ATMega328 Microcontroller}{}
+\begin{itemize}
+    \itemsep0em
+    \resitem{Utsav Banerjee*, Lisa Ho*, Skanda Koppula* (MIT)}
+    \resitem{Technical Report from 6.858: Computer Systems Security.}
+    \resitem{Full-text report available at \url{https://people.csail.mit.edu/skoppula/papers/sidechannel.pdf}}
+\end{itemize}
+\vspace{0.1in}
+
+\ressubheadingtwo{Bayesian Clustering and Topic Discovery: Adventures with Gene Expression Data}{}
+\begin{itemize}
+    \itemsep0em
+    \resitem{Karen Yang*, Skanda Koppula* (MIT)}
+    \resitem{Technical Report from 6.882: Bayesian Modeling and Inference.}
+    \resitem{Full-text report available at \url{https://people.csail.mit.edu/skoppula/papers/bayes.pdf}}
+\end{itemize}
+\vspace{0.1in}
+
+\end{document}
