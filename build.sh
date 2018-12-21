@@ -12,7 +12,7 @@ cd papers-page
 cd ..
 
 echo "pdftk ${file}.pdf papers-page/papers.pdf output ${file}-with-papers.pdf"
-pdftk ${totalfile}.pdf papers-page/skanda-papers.pdf output ${totalfile}-with-papers-page.pdf
+gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dAutoRotatePages=/None -sOutputFile="${totalfile}-with-papers-page.pdf" ${totalfile}.pdf papers-page/skanda-papers.pdf
 
 # Cleanup the junk
 rm -rf *.log *.aux missfont.log _minted* texput.log *.out *.dvi
